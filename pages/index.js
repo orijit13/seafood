@@ -4,9 +4,29 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 export default function Home() {
-
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
   return (
     <>
       <Head>
@@ -23,29 +43,25 @@ export default function Home() {
           <section className="slider">
             <div className="flexslider">
               <ul className="slides">
-                <li>
-                  <p>
-                    Hen an unknown printer took a galley of type and scrambled it
-                    to make a type specimen<br />
-                    book. It has survived not only five centuries, but also the
-                    leap into electronic
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    In a free hour, when our power of choice is untrammelled and
-                    when nothing prevents our being<br />
-                    able to do what we like best, every pleasure is to be welcomed
-                    and every pain avoided.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur<br />
-                    magni dolores eos qui ratione voluptatem sequi nesciunt.
-                  </p>
-                </li>
+              <Carousel autoPlay={true} responsive={responsive}>
+                    <p>
+                      Hen an unknown printer took a galley of type and scrambled it
+                      to make a type specimen<br />
+                      book. It has survived not only five centuries, but also the
+                      leap into electronic
+                    </p>
+                    <p>
+                      In a free hour, when our power of choice is untrammelled and
+                      when nothing prevents our being<br />
+                      able to do what we like best, every pleasure is to be welcomed
+                      and every pain avoided.
+                    </p>
+                    <p>
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur<br />
+                      magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+              </Carousel>
               </ul>
             </div>
           </section>

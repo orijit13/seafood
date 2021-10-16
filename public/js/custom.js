@@ -54,17 +54,17 @@ jQuery(document).ready(function ($) {
 	filterList.init();
   });
 
-  $("span.menu").click(function () {
+  $("span.menu").on('click',function () {
 	$("ul.res").slideToggle("slow", function () {
 	  // Animation complete.
 	});
   });
 
-  $(window).load(function () {
+ /*  $(window).load(function () {
 	$(".flexslider").flexslider({
 	  animation: "slide",
 	  start: function (slider) {
 		$("body").removeClass("loading");
 	  },
 	});
-  });
+  }); */

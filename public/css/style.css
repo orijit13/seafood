@@ -4,7 +4,6 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-@import url('http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic');
 
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
@@ -71,7 +70,7 @@ span.menu{
 	border: none;
 	outline:none;
 }
-.search input[type="submit"] {
+.search input[type="submit"], .searchBtn {
 	background: url(../images/serch.png)no-repeat 0em 0px;
 	width: 32px;
 	height: 31px;
@@ -1096,7 +1095,7 @@ padding-bottom: 3em;
 	resize: none;
 	-webkit-appearance: none;
 }
-.contact-right input[type="submit"] {
+.contact-right input[type="submit"], .contact-right button {
 	font-size: 15px;
 	font-weight: 400;
 	color: #fff;
@@ -1621,7 +1620,7 @@ span.ver-line {
 	font-size: 0.9em;
 	padding: 3px;
 }
-.search input[type="submit"] {
+.search input[type="submit"], .searchBtn {
 	background: url(../images/serch.png)no-repeat 0em 7px;
 }
 span.menu img {
@@ -1864,6 +1863,7 @@ span.ver-line {
 }
 .footer {
 	min-height: 230px;
+	margin: 0;
 }
 .footer-bg {
 	min-height: 230px;
@@ -1885,4 +1885,8 @@ margin: 0.5em 0px 0px 0px;
 	height: 50px;
 }
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #fff;
+	opacity: 1; /* Firefox */
+  }
 /*--meadia quiries end here--*/

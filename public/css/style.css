@@ -346,6 +346,7 @@ ul#filters {
 		display:none;
 		float:left;
 		overflow:hidden;
+		margin-right: 12px;
 }
 div#portfoliolist {
 		padding: 10px 0px;
@@ -511,7 +512,7 @@ span.long-line {
 }
 .see-info-grid {
 	float: left;
-	width: 33%;
+	/* width: 33%; */
 	margin: 2em 0px 0px 0px;
 	text-align: center;
 }
@@ -913,7 +914,7 @@ padding-bottom: 3em;
 }
 .papular-tags ul li {
 	display: inline-block;
-	margin: 0px 0px 25px 0px;
+	margin: 0px 8px 25px 0px;
 }
 .papular-tags ul li a {
 	font-size: 15px;
@@ -936,6 +937,7 @@ padding-bottom: 3em;
 }
 .single-imagesprite ul li {
 	display: inline-block;
+	padding: 2px;
 }
 .single-imagesprite ul li a span{
 	background: url(../images/img-sprit.png)no-repeat;
@@ -1216,6 +1218,9 @@ span.menu{
      cursor:pointer;
 	width: 10%;
 	margin: 0 auto;
+}
+#portfoliolist .portfolio{
+	margin-right: 0;
 }
 ul.res{
 	 display:none;
@@ -1615,6 +1620,10 @@ span.ver-line {
 }
 }
 @media(max-width:320px){
+	#portfoliolist .portfolio{
+		margin-right: 0;
+	}
+
 .search input[type="text"] {
 	width: 65%;
 	font-size: 0.9em;
@@ -1889,4 +1898,15 @@ margin: 0.5em 0px 0px 0px;
 	color: #fff;
 	opacity: 1; /* Firefox */
   }
+
+  .single-subscribe ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #999;
+	opacity: 1; /* Firefox */
+  }
+  /* .image {
+    object-fit: scale-down;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  } */
 /*--meadia quiries end here--*/

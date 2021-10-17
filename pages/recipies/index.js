@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import Link from 'next/link'
 
 const Recipies = () => {
     return (
@@ -21,7 +22,7 @@ const Recipies = () => {
                         </div>
                         <div className="recipies-menu">
                             <div className="col-md-6 recipies-top-left">
-                                <img src="images/pizza.jpg" alt="" />
+                                <Image src="/images/pizza.jpg" alt="" width={500} height={400} layout="responsive" />
                             </div>
                             <div className="col-md-6 recipies-top-right">
                                 <h3>Total Time</h3>
@@ -51,51 +52,51 @@ const Recipies = () => {
                 <div className="container">
                     <div className="recipies-bottom">
                         <div className="view view-seventh">
-                            <img src="images/r1.jpg" />
+                            <Image src="/images/r1.jpg" alt="" width={360} height={350} layout="responsive" />
                             <div className="mask">
-                                <h2>Hover Style #7</h2>
+                                <h2>Prawn Masala</h2>
                                 <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                                <a href="single.html" className="info">Read More</a>
+                                <Link href="/recipies/prawn-masala"><a className="info">Read More</a></Link>
                             </div>
                         </div>
                         <div className="view view-seventh">
-                            <img src="images/r2.jpg" />
+                            <Image src="/images/r2.jpg" alt="" width={360} height={350} layout="responsive" />
                             <div className="mask">
-                                <h2>Hover Style #7</h2>
+                                <h2>Kerala Fried Prawns</h2>
                                 <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                                <a href="single.html" className="info">Read More</a>
+                                <Link href="/recipies/kerala-fried-prawns"><a className="info">Read More</a></Link>
                             </div>
                         </div>
                         <div className="view view-seventh">
-                            <img src="images/r3.jpg" />
+                            <Image src="/images/r3.jpg" alt="" width={360} height={350} layout="responsive" />
                             <div className="mask">
-                                <h2>Hover Style #7</h2>
+                                <h2>Spicy Sriracha Prawns with Basil</h2>
                                 <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                                <a href="single.html" className="info">Read More</a>
+                                <Link href="/recipies/spicy-sriracha-prawns-with-basil"><a className="info">Read More</a></Link>
                             </div>
                         </div>
                         <div className="view view-seventh">
-                            <img src="images/r4.jpg" />
+                            <Image src="/images/r4.jpg" alt="" width={360} height={350} layout="responsive" />
                             <div className="mask">
-                                <h2>Hover Style #7</h2>
+                                <h2>Prawn Curry</h2>
                                 <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                                <a href="single.html" className="info">Read More</a>
+                                <Link href="/recipies/prawn-curry"><a className="info">Read More</a></Link>
                             </div>
                         </div>
                         <div className="view view-seventh">
-                            <img src="images/r5.jpg" />
+                            <Image src="/images/r5.jpg" alt="" width={360} height={350} layout="responsive" />
                             <div className="mask">
-                                <h2>Hover Style #7</h2>
+                                <h2>Prawn Balcho</h2>
                                 <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                                <a href="single.html" className="info">Read More</a>
+                                <Link href="/recipies/prawn-balcho"><a className="info">Read More</a></Link>
                             </div>
                         </div>
                         <div className="view view-seventh">
-                            <img src="images/r7.jpg" />
+                            <Image src="/images/r7.jpg" alt="" width={360} height={350} layout="responsive" />
                             <div className="mask">
-                                <h2>Hover Style #7</h2>
+                                <h2>Prawn Pulao</h2>
                                 <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                                <a href="single.html" className="info">Read More</a>
+                                <Link href="/recipies/prawn-pulao"><a className="info">Read More</a></Link>
                             </div>
                         </div>
                         <div className="clearfix"> </div>

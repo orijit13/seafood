@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -12,14 +13,16 @@ const menu = [
 
 function Header() {
     const router = useRouter();
+    const [showMe, setShowMe] = useState(false);
 
+    const showHamburger = () => setShowMe(!showMe);
     return (
         <>
             <div className="header-main">
                 <div className="container">
                     <div className="header-navg">
-                        <span className="menu"> <img src="images/icon.png" alt="" /></span>
-                        <ul className="res">
+                        <span className="menu" onClick={showHamburger}> <img src="../images/icon.png" alt="" /></span>
+                        <ul className="res" style={{ display: showMe?"block":"" }}>
                             {
                                menu.map((item,index)=> {
                                    return(

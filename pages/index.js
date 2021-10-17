@@ -89,7 +89,8 @@ export default function Home() {
     <>
       <Head>
         <title>Sea Food A Hotal and Restaurants</title>
-        <script defer src="/js/jquery.flexslider.js"></script>
+        <script type="text/javascript" src="/js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
       </Head>
       <div className="banner">
         <Header />

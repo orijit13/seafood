@@ -25,11 +25,7 @@ class MyDocument extends Document {
         <script src="/js/jquery.min.js"></script>
         <script type="text/javascript" src="/js/move-top.js"></script>
         <script type="text/javascript" src="/js/easing.js"></script>
-        <script type="text/javascript" src="/js/jquery.mixitup.min.js"></script>
         <script type="text/javascript" src="/js/custom.js"></script>
-        {/* <script defer src="/js/jquery.flexslider.js"></script> */}
-
-
         </Head>
         <body>
           <Main />
